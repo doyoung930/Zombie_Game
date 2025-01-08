@@ -83,6 +83,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &922785597700686188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3618639342427891248}
+  m_Layer: 0
+  m_Name: MuzzlePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3618639342427891248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922785597700686188}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.0417, z: 0.679}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2804795454002728856}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1345148440250549376
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2804795454002728856}
   - component: {fileID: 6370877802268855535}
+  - component: {fileID: -1095021795830068452}
   m_Layer: 0
   m_Name: ShotGun_F
   m_TagString: Untagged
@@ -371,6 +403,7 @@ Transform:
   - {fileID: 6113552497034564500}
   - {fileID: 117475946978702617}
   - {fileID: 4681697281155607058}
+  - {fileID: 3618639342427891248}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -386,6 +419,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8fa0d6b00d3754fad664f1eaef7230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 100
+  damage: 30
+  muzzleFlash: {fileID: 0}
+  muzzlePrefab: {fileID: 1336949550903370, guid: 4543ab5e3d405ec40a8d4e9aa5165030, type: 3}
+  muzzlePosition: {fileID: 922785597700686188}
+  projectilePrefab: {fileID: 0}
+  projectileToDisableOnFire: {fileID: 0}
+--- !u!114 &-1095021795830068452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3289723630241895714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933e18ea02e20a1429dc3cdc3671dbc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunShotClip: {fileID: 8300000, guid: 0e5ec5d798406aa4699be8c44dd7599f, type: 3}
+  source: {fileID: 4702716867945608868, guid: 0c814e42b196a304db481f9f2a06e0eb, type: 3}
+  audioPitch: {x: 0.9, y: 1.1}
+  autoFire: 0
+  shotDelay: 0.5
+  rotate: 0
+  rotationSpeed: 0.15
+  scope: {fileID: 0}
+  scopeActive: 1
+  timeLastFired: -1
 --- !u!1 &3666052260559144184
 GameObject:
   m_ObjectHideFlags: 0
