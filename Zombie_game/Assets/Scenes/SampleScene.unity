@@ -129,6 +129,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1872908888}
     m_Modifications:
+    - target: {fileID: -9059892005020446986, guid: 70e3dd6fd9ebb1a4f986c0ff4ef8879f, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 569335149}
     - target: {fileID: 5843034239475566859, guid: 70e3dd6fd9ebb1a4f986c0ff4ef8879f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -316,6 +320,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &569335149 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9005220658853505169, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1872908887}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +483,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6370877802268855535, guid: e5eabc2f21f5b45448b3e5ab8f24e193, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 569335149}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5eabc2f21f5b45448b3e5ab8f24e193, type: 3}
 --- !u!1001 &1032980033
@@ -535,6 +548,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.532
       objectReference: {fileID: 0}
+    - target: {fileID: 8126318172948669570, guid: 77426db18e9d00c4f91c492985ce7ab0, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 569335149}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77426db18e9d00c4f91c492985ce7ab0, type: 3}
 --- !u!1001 &1143956244
@@ -544,6 +561,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1872908888}
     m_Modifications:
+    - target: {fileID: -8015910858313792502, guid: 766a7dad79e56a14b9ce7252ca173ee3, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 569335149}
     - target: {fileID: 3675561962541535192, guid: 766a7dad79e56a14b9ce7252ca173ee3, type: 3}
       propertyPath: m_Name
       value: ShotGun_J
@@ -605,6 +626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1872908888}
     m_Modifications:
+    - target: {fileID: -7855783410911030911, guid: 596b2dd212488f543bd4d53f42bfaaa6, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 569335149}
     - target: {fileID: 8179220902118971389, guid: 596b2dd212488f543bd4d53f42bfaaa6, type: 3}
       propertyPath: m_RootOrder
       value: 2
