@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int health = 100;
+    [SerializeField] float health = 100f;
 
-    void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
 
