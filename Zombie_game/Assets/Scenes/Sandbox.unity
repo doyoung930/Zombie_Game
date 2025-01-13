@@ -1536,7 +1536,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6300085247242776164, guid: eceba8eea815ed4498e4f5c06ffdbdaa, type: 3}
       propertyPath: cursorLocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6956910954490833058, guid: eceba8eea815ed4498e4f5c06ffdbdaa, type: 3}
       propertyPath: m_RootOrder
@@ -1615,4 +1615,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6951c0e505378de4c820a4e4c6a02402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  hitPoints: 100
+--- !u!114 &8997996946497744571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848361726979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a26afbf3e3f674a80ad64019a9349e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 2036774274}

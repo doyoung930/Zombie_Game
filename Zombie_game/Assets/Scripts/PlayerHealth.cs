@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] float health = 100f;
+    [SerializeField] float hitPoints = 100f;
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        hitPoints -= damage;
 
-        if (health <= 0)
+        if (hitPoints <= 0)
         {
-            Destroy(gameObject);
+            GetComponent<DeathHandler>().HandleDeath();
         }
     }
 }
