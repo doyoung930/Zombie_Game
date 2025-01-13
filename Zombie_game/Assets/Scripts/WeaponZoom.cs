@@ -9,6 +9,11 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] float zoomedInFOV = 20f;
     
     bool zoomedInToggle = false;
+
+    private void Start()
+    {
+
+    }
     
     private void Update()
     {
