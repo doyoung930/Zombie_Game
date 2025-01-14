@@ -5,6 +5,8 @@ using UnityEngine;
 public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] private int currentWeapon = 0;
+
+    [SerializeField] private WeaponZoom weaponZoom;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,18 +50,22 @@ public class WeaponSwitcher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            weaponZoom.ZoomOut();
             currentWeapon = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            weaponZoom.ZoomOut();
             currentWeapon = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            weaponZoom.ZoomOut();
             currentWeapon = 2;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
+            weaponZoom.ZoomOut();
             currentWeapon = 3;
         }
     }
@@ -69,6 +75,7 @@ public class WeaponSwitcher : MonoBehaviour
     {
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
+            weaponZoom.ZoomOut();
             if (currentWeapon >= transform.childCount - 1)
             {
                 currentWeapon = 0;
@@ -80,6 +87,7 @@ public class WeaponSwitcher : MonoBehaviour
         }
         else if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
+            weaponZoom.ZoomOut();
             if (currentWeapon <= 0)
             {
                 currentWeapon = transform.childCount - 1;
