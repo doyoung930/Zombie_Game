@@ -5065,6 +5065,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8997996946497744578}
     - target: {fileID: 8126318172948669570, guid: 77426db18e9d00c4f91c492985ce7ab0, type: 3}
+      propertyPath: ammoType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126318172948669570, guid: 77426db18e9d00c4f91c492985ce7ab0, type: 3}
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
@@ -5080,7 +5084,8 @@ PrefabInstance:
       propertyPath: muzzlePosition
       value: 
       objectReference: {fileID: 950055324}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3726109412533458344, guid: 77426db18e9d00c4f91c492985ce7ab0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 77426db18e9d00c4f91c492985ce7ab0, type: 3}
 --- !u!1 &950055324 stripped
 GameObject:
@@ -7968,6 +7973,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8997996946497744578}
     - target: {fileID: -7855783410911030911, guid: 596b2dd212488f543bd4d53f42bfaaa6, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7855783410911030911, guid: 596b2dd212488f543bd4d53f42bfaaa6, type: 3}
       propertyPath: hitEffect
       value: 
       objectReference: {fileID: 5238538877814813142, guid: 47096eff328e11a418ace7db2d72aa97, type: 3}
@@ -8031,7 +8040,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7261093459382174108, guid: 596b2dd212488f543bd4d53f42bfaaa6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 596b2dd212488f543bd4d53f42bfaaa6, type: 3}
 --- !u!1 &1495698911 stripped
 GameObject:
@@ -8712,6 +8722,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8997996946497744578}
     - target: {fileID: -9059892005020446986, guid: 70e3dd6fd9ebb1a4f986c0ff4ef8879f, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9059892005020446986, guid: 70e3dd6fd9ebb1a4f986c0ff4ef8879f, type: 3}
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
@@ -8779,7 +8793,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9208584559671820928, guid: 70e3dd6fd9ebb1a4f986c0ff4ef8879f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 70e3dd6fd9ebb1a4f986c0ff4ef8879f, type: 3}
 --- !u!1 &1594730159 stripped
 GameObject:
@@ -12632,4 +12647,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdc306b9d7feb54b84139c8f92df785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 30
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 10
+  - ammoType: 2
+    ammoAmount: 10
+  - ammoType: 3
+    ammoAmount: 20
